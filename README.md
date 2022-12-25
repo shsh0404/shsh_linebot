@@ -1,5 +1,10 @@
 # 【程式設計】用LINEBot改善校園生活
 ##  LINE Developers
+### 建立LINE官方帳號
+![14](https://user-images.githubusercontent.com/121269120/209457730-145c9bfc-d070-4601-ac80-7b54d4f9b770.png)
+### 獲取LINE Channel secret、access token
+![15](https://user-images.githubusercontent.com/121269120/209457828-ce66be6e-e884-44b5-b82f-0913962f6e2d.png)
+![16](https://user-images.githubusercontent.com/121269120/209457848-a893efdc-261c-4e2c-ba62-cea79107e4eb.png)
 ### 安裝Django及line-bot-sdk
 ```
 pip install Django
@@ -98,7 +103,7 @@ python manage.py runserver
 ### 設定圖文選單
 ![11](https://user-images.githubusercontent.com/121269120/209457368-f53fc810-6c14-4750-b58c-1f647f6e1450.png)  
 ![10](https://user-images.githubusercontent.com/121269120/209457372-7d6c8449-682d-404d-a0a8-247c68bd3b6f.png)
-## LINE Notify 爬蟲
+## LINE Notify爬蟲
 ### 登入LINE Notify，發行權杖，將權杖記錄下來
 ![12](https://user-images.githubusercontent.com/121269120/209457446-45c0c71e-803a-4376-9786-0bff1f414003.png)
 ### 爬蟲
@@ -147,5 +152,9 @@ if __name__ == "__main__":
 ```
 ### 定時爬蟲
 #### 開啟windows的工作排程器
-
-**完成 LINEBot Notify 校網爬蟲的設定了喔！**
+![13](https://user-images.githubusercontent.com/121269120/209457637-d4fcec85-f0eb-49c9-a6d9-2c512178431c.png)
+#### 建立工作並新增程式(py.檔)路徑
+![17](https://user-images.githubusercontent.com/121269120/209457881-850a069b-33e6-4fa0-bcf5-cabf89b827d5.png)
+#### 設定工作觸發時間
+![18](https://user-images.githubusercontent.com/121269120/209457916-8d0bf276-f89c-4365-9ceb-951ed8bc7d76.png)
+**這樣就完成 LINEBot Notify 校網爬蟲的設定了喔！**
