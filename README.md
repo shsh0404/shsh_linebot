@@ -41,5 +41,5 @@ md static
 ![image](https://github.com/shsh0404/44fun/blob/main/5.png)
 #### 在開發階段Allowed_Host先設定為*即可
 ![image](https://github.com/shsh0404/44fun/blob/main/6.png)
-## 更改urls.py
+### 更改urls.py
 ![image](https://github.com/shsh0404/44fun/blob/main/7.png)
