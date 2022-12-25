@@ -1,23 +1,24 @@
-## 【程式設計】用LINEBot改善校園生活
+# 【程式設計】用LINEBot改善校園生活
+##  LINE Developers
 ### 安裝Django及line-bot-sdk
 ```
-$ pip install Django
-$ pip install line-bot-sdk
-$ pip install virtualenv
+pip install Django
+pip install line-bot-sdk
+pip install virtualenv
 ```
 ### 開啟第一個Django專案
 ```
-$ cd C:/
-$ django-admin startproject "專案名稱"
-$ cd "專案名稱"
+cd C:/
+django-admin startproject "專案名稱"
+cd "專案名稱"
 ```
 ### 建立虛擬環境
 ```
-#建立虛擬環境方式
-$ virtualenv "虛擬環境名稱"
+# 建立虛擬環境方式
+virtualenv "虛擬環境名稱"
 
-#啟動虛擬環境方式
-$ .\"虛擬環境名稱"\Scripts\activate
+# 啟動虛擬環境方式
+.\"虛擬環境名稱"\Scripts\activate
 ```
 ### 建立Django APP
 ```
@@ -64,17 +65,21 @@ python manage.py runserver
 ### 開啟runserver+ngrok進行LINEBOT測試
 ```
 # 進入專案資料夾
-$ cd "專案資料夾"
+cd "專案資料夾"
+
 # 啟動虛擬環境，正確啟動後前面會有('虛擬環境名稱')
-$ .\"虛擬環境名稱"\Scripts\activate
+.\"虛擬環境名稱"\Scripts\activate
+
 # 在虛擬環境安裝Django及LINE BOT SDK
-$ pip install Django
-$ pip install line-bot-sdk
+pip install Django
+pip install line-bot-sdk
+
 # 初始化資料庫遷移
-$ python manage.py makemigrations
-$ python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+
 # 開啟Django內建伺服器指令
-$ python manage.py runserver
+python manage.py runserver
 ```
 開啟另一個命令提示字元，並輸入下列指令
 ```
@@ -86,3 +91,4 @@ $ python manage.py runserver
 在 webhook URL 後面加上 /callback
 ![8](https://user-images.githubusercontent.com/121269120/209457110-c034bff7-83e9-4eb6-b290-8099c774ed91.png)
 **這樣就用 Django 完成 LINEBot 的設定了喔！**
+##  LINE Notify
