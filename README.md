@@ -98,7 +98,54 @@ python manage.py runserver
 ### 設定圖文選單
 ![11](https://user-images.githubusercontent.com/121269120/209457368-f53fc810-6c14-4750-b58c-1f647f6e1450.png)  
 ![10](https://user-images.githubusercontent.com/121269120/209457372-7d6c8449-682d-404d-a0a8-247c68bd3b6f.png)
-## LINE Notify
+## LINE Notify 爬蟲
 ### 登入LINE Notify，發行權杖，將權杖記錄下來
 ![12](https://user-images.githubusercontent.com/121269120/209457446-45c0c71e-803a-4376-9786-0bff1f414003.png)
+### 爬蟲
+```
+from bs4 import BeautifulSoup  # 從 bs4 大套件中選取其中一個 BeautifulSoup 功能
+import requests          
 
+def linebot(url):         # 自訂函數
+
+  data = requests.get(url)   # 模擬伺服器使用 get 取得資料
+
+  soup = BeautifulSoup(data.text,"html.parser")   # 匯入模組
+
+  sel = soup.select("td.col-md-9 a")        # 只取每篇貼文的標題
+
+  msg = " "
+  
+  for item in sel:
+    msg += item.text + "\n"     
+  return msg
+
+
+def LineNotify(token, msg):         # 連接 LineNotify
+
+    headers = {
+        "Authorization": "Bearer " + token,
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
+
+    params = {
+        "message": msg
+    }
+
+    r = requests.post("https://notify-api.line.me/api/notify", headers=headers, params=params)
+
+ 
+if __name__ == "__main__":
+
+    token = "你的LINE Notify權杖token"  # 從LINE Notify取得的權杖(token)
+
+    url = "https://www.shsh.ylc.edu.tw/"          # 要爬蟲的網址
+
+    msg = "最新消息：\n" + linebot(url)          # 要在LINE上跳出的提示訊息
+
+    LineNotify(token, msg)
+```
+### 定時爬蟲
+#### 開啟windows的工作排程器
+
+**完成 LINEBot Notify 校網爬蟲的設定了喔！**
