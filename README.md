@@ -43,3 +43,17 @@ md static
 ![image](https://github.com/shsh0404/44fun/blob/main/6.png)
 ### 更改urls.py
 ![image](https://github.com/shsh0404/44fun/blob/main/7.png)
+### 資料庫遷移初始化及建立管理者帳號
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+```
+### 執行runserver進行測試
+```
+python manage.py runserver
+```
+### 開啟Django網站後開啟瀏覽器
+```
+127.0.0.1:8000/admin
+```
