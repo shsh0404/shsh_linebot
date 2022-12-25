@@ -91,4 +91,14 @@ python manage.py runserver
 在 webhook URL 後面加上 /callback
 ![8](https://user-images.githubusercontent.com/121269120/209457110-c034bff7-83e9-4eb6-b290-8099c774ed91.png)
 **這樣就用 Django 完成 LINEBot 的設定了喔！**
-##  LINE Notify
+
+##  訊息推播
+### 設定加入好友的歡迎訊息
+![9](https://user-images.githubusercontent.com/121269120/209457291-351cf760-aae4-4d51-8d76-ac4f2c1091a8.png)  
+### 設定圖文選單
+![11](https://user-images.githubusercontent.com/121269120/209457368-f53fc810-6c14-4750-b58c-1f647f6e1450.png)  
+![10](https://user-images.githubusercontent.com/121269120/209457372-7d6c8449-682d-404d-a0a8-247c68bd3b6f.png)
+## LINE Notify
+### 登入LINE Notify，發行權杖，將權杖記錄下來
+![12](https://user-images.githubusercontent.com/121269120/209457446-45c0c71e-803a-4376-9786-0bff1f414003.png)
+
