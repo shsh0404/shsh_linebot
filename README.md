@@ -85,4 +85,4 @@ $ python manage.py runserver
 順利啟動ngrok後將https之後的url記錄下來，並到 LINE Developer 後台貼的 webhook URL 貼上  
 在 webhook URL 後面加上 /callback
 ![8](https://user-images.githubusercontent.com/121269120/209457110-c034bff7-83e9-4eb6-b290-8099c774ed91.png)
-
+**這樣就用 Django 完成 LINEBot 的設定了喔！**
