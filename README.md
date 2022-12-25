@@ -58,4 +58,31 @@ python manage.py runserver
 127.0.0.1:8000/admin
 ```
 ### 運用ngrok產生HTTPS URL
-進入ngrok官網下載ngrok.exe
+進入ngrok官網下載 ngrok.exe  
+下載好後解壓縮，將 ngrok.exe放在專案資料夾的第一層(同 manage.py)  
+在ngrok官網註冊帳號，註冊完畢並登入後，會看到一組自己的授權碼，將授權碼記錄下來
+### 開啟runserver+ngrok進行LINEBOT測試
+```
+# 進入專案資料夾
+$ cd "專案資料夾"
+# 啟動虛擬環境，正確啟動後前面會有('虛擬環境名稱')
+$ .\"虛擬環境名稱"\Scripts\activate
+# 在虛擬環境安裝Django及LINE BOT SDK
+$ pip install Django
+$ pip install line-bot-sdk
+# 初始化資料庫遷移
+$ python manage.py makemigrations
+$ python manage.py migrate
+# 開啟Django內建伺服器指令
+$ python manage.py runserver
+```
+開啟另一個命令提示字元，並輸入下列指令
+```
+./ngrok authtoken 'ngrok授權碼'
+./ngrok http 8000
+```
+### 設置webhook URL
+順利啟動ngrok後將https之後的url記錄下來，並到 LINE Developer 後台貼的 webhook URL 貼上  
+在 webhook URL 後面加上 /callback
+![8](https://user-images.githubusercontent.com/121269120/209457110-c034bff7-83e9-4eb6-b290-8099c774ed91.png)
+
