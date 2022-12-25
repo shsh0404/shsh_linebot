@@ -32,3 +32,4 @@ md static
 ##### 把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前
 ![image](https://github.com/shsh0404/44fun/blob/main/111.png)
 #### 在INSTALLED_APPS內新增剛剛建立的APP名稱
+![image](https://github.com/shsh0404/44fun/blob/main/222.png)
