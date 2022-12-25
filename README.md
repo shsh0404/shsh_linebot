@@ -36,19 +36,19 @@ md static
 ```
 ### 更改settings.py
 #### 把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前
-![image](https://github.com/shsh0404/44fun/blob/main/1.png)
+![1](https://user-images.githubusercontent.com/121269120/209457953-6826d258-5765-416a-888d-76acf3051e39.png)
 #### 在INSTALLED_APPS內新增剛剛建立的APP名稱
-![image](https://github.com/shsh0404/44fun/blob/main/2.png)
+![2](https://user-images.githubusercontent.com/121269120/209457955-16580a6e-6b91-43ac-99df-0a1a6dec1774.png)
 #### 在TEMPLATES中新增templates的資料夾路徑
-![image](https://github.com/shsh0404/44fun/blob/main/3.png)
+![3](https://user-images.githubusercontent.com/121269120/209457957-f18f7ee4-8317-4353-93fc-60e21687a772.png)
 #### 設定語系、時區
-![image](https://github.com/shsh0404/44fun/blob/main/4.png)
+![4](https://user-images.githubusercontent.com/121269120/209457959-90a42b4f-e594-4d21-b330-2d9be902b1af.png)
 #### 新增static路徑
-![image](https://github.com/shsh0404/44fun/blob/main/5.png)
+![5](https://user-images.githubusercontent.com/121269120/209457962-e9e4d4e6-8b5f-4f96-99e5-04b3a078340d.png)
 #### 在開發階段Allowed_Host先設定為*即可
-![image](https://github.com/shsh0404/44fun/blob/main/6.png)
+![6](https://user-images.githubusercontent.com/121269120/209457964-74f1e6db-2956-43b7-81c7-e1e16374061f.png)
 #### 更改urls.py
-![image](https://github.com/shsh0404/44fun/blob/main/7.png)
+![7](https://user-images.githubusercontent.com/121269120/209457968-e519299a-068f-4086-9852-9ebb39e91506.png)
 ### 資料庫遷移初始化及建立管理者帳號
 ```
 python manage.py makemigrations
