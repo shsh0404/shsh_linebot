@@ -18,3 +18,18 @@ $ virtualenv "虛擬環境名稱"
 
 #啟動虛擬環境方式
 $ .\"虛擬環境名稱"\Scripts\activate
+```
+#### 建立Django APP
+```
+python manage.py startapp "APP名稱"
+```
+#### 新增資料夾
+```
+md templates
+md static
+```
+#### 更改settings.py
+##### 把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前
+```
+
+```
