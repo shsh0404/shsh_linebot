@@ -29,19 +29,19 @@ md templates
 md static
 ```
 ### 更改settings.py
-#### 把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前
+把LINE的Channel Access Token跟Channel Secret新增到Secret_Key之前
 ![image](https://github.com/shsh0404/44fun/blob/main/1.png)
-#### 在INSTALLED_APPS內新增剛剛建立的APP名稱
+在INSTALLED_APPS內新增剛剛建立的APP名稱
 ![image](https://github.com/shsh0404/44fun/blob/main/2.png)
-#### 在TEMPLATES中新增templates的資料夾路徑
+在TEMPLATES中新增templates的資料夾路徑
 ![image](https://github.com/shsh0404/44fun/blob/main/3.png)
-#### 設定語系、時區
+設定語系、時區
 ![image](https://github.com/shsh0404/44fun/blob/main/4.png)
-#### 新增static路徑
+新增static路徑
 ![image](https://github.com/shsh0404/44fun/blob/main/5.png)
-#### 在開發階段Allowed_Host先設定為*即可
+在開發階段Allowed_Host先設定為*即可
 ![image](https://github.com/shsh0404/44fun/blob/main/6.png)
-### 更改urls.py
+更改urls.py
 ![image](https://github.com/shsh0404/44fun/blob/main/7.png)
 ### 資料庫遷移初始化及建立管理者帳號
 ```
@@ -57,3 +57,5 @@ python manage.py runserver
 ```
 127.0.0.1:8000/admin
 ```
+### 運用ngrok產生HTTPS URL
+進入ngrok官網下載ngrok.exe
