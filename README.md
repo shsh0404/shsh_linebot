@@ -1,4 +1,4 @@
-# 【程式設計】用LINEBot改善校園生活
+# 【自主學習】Python 的學習與應用 - 利用 LINE Bot 幫助校園生活
 ##  LINE Developers
 ### 建立LINE官方帳號
 ![14](https://user-images.githubusercontent.com/121269120/209457730-145c9bfc-d070-4601-ac80-7b54d4f9b770.png)
